@@ -77,27 +77,27 @@
         </aside>
       </div>
     </div>
-<script>
-$(document).ready(function () {
-    var apiRoot = "https://api.github.com/";
-	var user = "dacevedo12";
-    var repository = "LoLPing";
-	function showStats(data) {
+	<script>
+	$(document).ready(function () {
+	    var apiRoot = "https://api.github.com/";
+		var user = "dacevedo12";
+	    var repository = "LoLPing";
+		function showStats(data) {
 
-        $.each(data, function(index, item) {
-            var releaseAssets = item.assets;
-            
-                $.each(releaseAssets, function(index, asset) {
-                    document.getElementById("count").innerHTML+=asset.download_count;
-                });
-		});
-	}
+		$.each(data, function(index, item) {
+		    var releaseAssets = item.assets;
 
-    var url = apiRoot + "repos/" + user + "/" + repository + "/releases";
-    $.getJSON(url, showStats).fail(showStats);
-	
-});
-	    </script>
+			$.each(releaseAssets, function(index, asset) {
+			    document.getElementById("count").innerHTML+=asset.download_count;
+			});
+			});
+		}
+
+	    var url = apiRoot + "repos/" + user + "/" + repository + "/releases";
+	    $.getJSON(url, showStats).fail(showStats);
+
+	});
+	</script>
   
 
 </body></html>
