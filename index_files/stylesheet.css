@@ -479,12 +479,12 @@ header h2 {
 
 .inner {
   position: relative;
-  width: 940px;
+  width: 980px;
   margin: 0 auto;
 }
 
 #content-wrapper {
-  padding-top: 30px;
+  padding-top: 10px;
   border-top: solid 1px #fff;
 }
 
@@ -500,7 +500,6 @@ header h2 {
 aside#sidebar {
   float: right;
   width: 200px;
-  min-height: 504px;
   padding-left: 20px;
   font-size: 12px;
   line-height: 1.3;
@@ -528,7 +527,6 @@ a.button {
 }
 a.button small {
   display: block;
-  font-size: 11px;
 }
 header a.button {
   position: absolute;
@@ -540,7 +538,7 @@ aside a.button {
   display: block;
   width: 138px;
   padding-left: 64px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 21px;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
